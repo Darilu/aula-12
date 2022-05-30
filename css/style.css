@@ -1,36 +1,90 @@
-/*Aula 12 - 17/05/2022*/
-body,ul{
+@font-face {
+    font-family: 'candy';
+    src: url('/font/Candy\ Shop\ Black.ttf') format('opentype');
+  }
+
+*{
     margin: 0px;
     padding: 0px;
-}
-a{
-    color: black;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-a:hover{
-    background: rgb(4, 41, 250);
-}
-#header{
+    font-size: 16px;
     box-sizing: border-box;
-    height: 110px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #e7e7e7;
-}
-#menu{
-    display: flex;
-    list-style: none;
-    gap: 0.5rem;
-}
-#bnt-mobile{
-    display: none;
 }
 
-#carouselExampleInterval {
-    position: relative;
-    z-index: 10;
-    padding-top: 80px;
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(78, 193, 255);
+}
+
+.container-header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li, ul {
+    display: inline;
+}
+
+
+header a{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 0;
+
+    padding: 0.3rem;
+    border-radius: 9px;
+}
+#logo:hover{
+    color: red;
+}
+
+#btn-mobile{
+    display: none;
+}
+/* 
+/////////////////////////////////////////////////////
+///////////////////////////BODY//////////////////////
+///////////////////////////////////////////////////// */
+
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../img/waves3.svg");
+    background-size: contain;
+}
+
+.container-body {
+    width: 80%;
+}
+
+.home {
+    height: 90vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.text-home {
+    font-family: "candy", 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 3px 3px black;
 }

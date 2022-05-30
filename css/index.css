@@ -1,0 +1,118 @@
+/*Aula 12 - 17/05/2022*/
+
+@font-face {
+    font-family: 'candy';
+    src: url('/font/Candy\ Shop\ Black.ttf') format('opentype');
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: #4bb9f5; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(0,107,166);
+    background: linear-gradient(90deg, rgba(0,107,166,1) 0%, rgba(75,185,245,1) 46%);
+}
+/* ///////////////////////////////////////
+///////////////INICIO HEADER/////////// 
+/////////////////////////////////////////*/
+
+
+#header{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+nav {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1{
+    line-height: 5rem;
+    font-family: "candy", 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    cursor: default;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #fce100;
+    text-shadow: 3px 3px black;
+    text-align: center;
+
+}
+
+
+.terms {
+    width: 60%;
+    background-color: #cdf1ff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #3b96b9 8px 8px 8px;
+    padding: 1rem 3rem;
+    
+}
+
+.terms h2, li {
+    margin-bottom: 1rem;   
+}
+
+.terms h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.button {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button a {
+    margin-top: 1.5rem;
+}
+
+header button{
+    border: none;
+    color: white;
+    box-shadow: #196f91 4px 4px 0px;
+    border-radius: 8px;
+    transition: transform 200ms, box-shadow 200ms;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+header .aceitar {
+    background-color: #1197cc;
+}
+header .recusar {
+    background-color: #dc3545;
+}
+
+header button:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #094c66 0px 0px 0px;
+}
+
+
